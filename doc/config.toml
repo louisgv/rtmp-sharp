@@ -1,3 +1,44 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "My New Hugo Site"
+title = "rtmp-sharp"
 languageCode = "en-us"
+
+theme = "docuapi"
+themesdir = "./themes"
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsOptions = ""
+pygmentsStyle = "monokai"
+# The monokai stylesheet is included in the base template.
+pygmentsUseClasses = true
+
+defaultContentLanguage = "en"
+
+[params]
+search = true
+
+# Configure the language example tabs.
+[[params.language_tabs]]
+key = "csharp"
+name = "C#"
+
+#Languages
+[languages]
+
+[languages.en]
+languageName = "English"
+weight = 2
+title = "DocuAPI Example Site"
+
+# Left sidebar footer items. Use HTMl or Markdown.
+toc_footers = [
+"<a href='https://github.com/imiuka/rtmp-sharp'>rtmp-sharp</a>",
+"<a href='https://github.com/imiuka'>by imiuka</a>",
+"Documentation Powered by [DocuAPI](https://github.com/bep/docuapi)",
+"Hugo Theme by [bep](https://github.com/bep)"
+]
+
+[languages.en.blackfriday]
+angledQuotes = false
+hrefTargetBlank = true
